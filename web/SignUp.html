@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>FONDOK BOOKING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="SignUp.js"> </script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer> </script>
+        
+        
+    <link rel="stylesheet" href="signUp.css">
+    <link rel="icon" href="logo.png">
+  </head>
+  <body>
+    <div class="container">
+
+        <form name="signup" id="signup" action="SignUp.jsp">
+
+        <div class="header">
+        
+            
+          <img src="icon.png"  style=" margin-top: -15px;float:right;width:140px;height:85px;">
+            <h3>Sign Up</h3>
+            
+            
+            
+            <p>You want to fill out this form</p>
+            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="inputs">
+        
+            <input name="name" type="text" autofocus placeholder="Enter your name" required />
+            <input  name="username" type="text" placeholder="Choose a username" onkeyup="sendInfo()" autofocus required />
+            <span style="height: 3px;" id="amitu"> </span>
+
+            <input name="age" type="text"    placeholder="Enter your age" autofocus required />
+            
+            <input name="email" type="email" placeholder="Enter a Valid Email" autofocus  required />
+            <input name="mobile" type="text" placeholder="Enter a Valid Mobile Number" autofocus  required/>
+        
+            
+            
+            <div class="checkboxy">
+                <input name="cecky" id="checky" value="1" type="checkbox" /><label class="terms">I accept the terms of use</label>
+            </div>
+            
+            <div id="html_element" > </div>
+            <input name="signup" id="submit" type="submit" value="SIGN UP NOW" />
+            
+         
+        </div>
+        <button style="margin-left: 90px" onclick="window.location.href='index.html';">BACK TO HOME PAGE</button>
+
+    </form>
+
+</div>
+    
+  </body>
+  
+</html>
+
+
+
